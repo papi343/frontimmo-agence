@@ -69,7 +69,7 @@ export default function PropertyCard({ property, onFavoriteToggle }) {
   };
 
   const formatPrice = (price) => {
-    return new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(price);
+    return new Intl.NumberFormat('fr-SN', { style: 'currency', currency: 'XOF', maximumFractionDigits: 0 }).format(price);
   };
 
   const statusLabels = {

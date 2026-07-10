@@ -95,19 +95,19 @@ export default function Footer() {
               <li className="flex items-start gap-2">
                 <MapPin size={18} className="text-indigo-400 shrink-0 mt-0.5" />
                 <span className="text-slate-400">
-                  123 Rue de l'Immobilier, 75001 Paris, France
+                  Avenue Cheikh Anta Diop, Dakar, Sénégal
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={18} className="text-indigo-400 shrink-0" />
-                <a href="tel:+33123456789" className="text-slate-400 hover:text-white transition-colors">
-                  +33 1 23 45 67 89
+                <a href="tel:+221338240000" className="text-slate-400 hover:text-white transition-colors">
+                  +221 33 824 00 00
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={18} className="text-indigo-400 shrink-0" />
-                <a href="mailto:contact@immoagence.fr" className="text-slate-400 hover:text-white transition-colors">
-                  contact@immoagence.fr
+                <a href="mailto:contact@immoagence.sn" className="text-slate-400 hover:text-white transition-colors">
+                  contact@immoagence.sn
                 </a>
               </li>
             </ul>

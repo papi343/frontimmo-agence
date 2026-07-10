@@ -305,9 +305,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Agents fictifs de repli si la base de données est vide */}
             {[
-              { id: 1, name: 'Jean Dupont', email: 'jean@dupont.com', phone: '+33 6 12 34 56 78', initial: 'JD' },
-              { id: 2, name: 'Sophie Martin', email: 'sophie@martin.com', phone: '+33 6 87 65 43 21', initial: 'SM' },
-              { id: 3, name: 'Marc Bernard', email: 'marc@bernard.com', phone: '+33 6 23 45 67 89', initial: 'MB' }
+              { id: 1, name: 'Fatou Diop', email: 'fatou@diop.sn', phone: '+221 77 123 45 67', initial: 'FD' },
+              { id: 2, name: 'Amadou Sow', email: 'amadou@sow.sn', phone: '+221 78 234 56 78', initial: 'AS' },
+              { id: 3, name: 'Khady Fall', email: 'khady@fall.sn', phone: '+221 76 345 67 89', initial: 'KF' }
             ].map(agent => (
               <div 
                 key={agent.id} 
