@@ -635,7 +635,7 @@ export default function Dashboard() {
                                 </span>
                               </td>
                               <td className="px-6 py-4 font-semibold text-slate-800 dark:text-slate-200">
-                                {new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(prop.prix)}
+                                {new Intl.NumberFormat('fr-SN', { style: 'currency', currency: 'XOF', maximumFractionDigits: 0 }).format(prop.prix)}
                               </td>
                               <td className="px-6 py-4">{prop.ville}</td>
                               <td className="px-6 py-4 flex justify-center gap-2">
@@ -756,7 +756,7 @@ export default function Dashboard() {
                                 </span>
                               </td>
                               <td className="px-6 py-4 font-bold text-slate-850 dark:text-slate-200">
-                                {new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(tx.prix_final)}
+                                {new Intl.NumberFormat('fr-SN', { style: 'currency', currency: 'XOF', maximumFractionDigits: 0 }).format(tx.prix_final)}
                               </td>
                               <td className="px-6 py-4">
                                 {new Date(tx.date_transaction).toLocaleDateString('fr-FR')}
@@ -948,7 +948,7 @@ export default function Dashboard() {
 
                 {/* Saisie du Prix */}
                 <div>
-                  <label htmlFor="prop-prix" className="block text-xs font-semibold text-slate-500 mb-1 uppercase tracking-wider">Prix (€)</label>
+                  <label htmlFor="prop-prix" className="block text-xs font-semibold text-slate-500 mb-1 uppercase tracking-wider">Prix (FCFA)</label>
                   <input
                     type="number"
                     id="prop-prix"
@@ -1043,7 +1043,7 @@ export default function Dashboard() {
                     value={propertyForm.ville}
                     required
                     onChange={handlePropertyFormChange}
-                    placeholder="Paris"
+                    placeholder="Dakar"
                     className="w-full px-3 py-2 bg-slate-50 dark:bg-slate-850 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-800 dark:text-white text-sm"
                   />
                 </div>
@@ -1058,7 +1058,7 @@ export default function Dashboard() {
                     value={propertyForm.code_postal}
                     required
                     onChange={handlePropertyFormChange}
-                    placeholder="75001"
+                    placeholder="12500"
                     className="w-full px-3 py-2 bg-slate-50 dark:bg-slate-850 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-800 dark:text-white text-sm"
                   />
                 </div>
@@ -1243,7 +1243,7 @@ export default function Dashboard() {
 
               {/* Saisie du prix final */}
               <div>
-                <label htmlFor="tx-price" className="block text-xs font-semibold text-slate-500 mb-1 uppercase tracking-wider">Montant Final (€)</label>
+                <label htmlFor="tx-price" className="block text-xs font-semibold text-slate-500 mb-1 uppercase tracking-wider">Montant Final (FCFA)</label>
                 <input
                   type="number"
                   id="tx-price"

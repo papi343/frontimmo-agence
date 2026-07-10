@@ -167,7 +167,7 @@ export default function Register() {
                   required
                   value={formData.tel}
                   onChange={handleChange}
-                  placeholder="Ex: +33 6 12 34 56 78"
+                  placeholder="Ex: +221 77 123 45 67"
                   className={`pl-10 w-full px-3 py-2.5 bg-slate-50 dark:bg-slate-850 border rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-slate-800 dark:text-white ${
                     errors.tel ? 'border-red-500' : 'border-slate-200 dark:border-slate-700'
                   }`}

@@ -81,7 +81,7 @@ export default function PropertyFilters({ onFilterChange }) {
             name="ville"
             value={filters.ville}
             onChange={handleChange}
-            placeholder="Ville (ex: Paris)..."
+            placeholder="Ville (ex: Dakar)..."
             className="pl-10 w-full px-4 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-slate-800 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
           />
         </div>
@@ -128,7 +128,7 @@ export default function PropertyFilters({ onFilterChange }) {
         <div className="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800 grid grid-cols-1 md:grid-cols-4 gap-4 animate-fade-in">
           {/* Prix Minimum */}
           <div>
-            <label htmlFor="prix_min" className="block text-xs font-semibold text-slate-500 mb-1">Prix Minimum (€)</label>
+            <label htmlFor="prix_min" className="block text-xs font-semibold text-slate-500 mb-1">Prix Minimum (FCFA)</label>
             <input
               type="number"
               id="prix_min"
@@ -142,7 +142,7 @@ export default function PropertyFilters({ onFilterChange }) {
 
           {/* Prix Maximum */}
           <div>
-            <label htmlFor="prix_max" className="block text-xs font-semibold text-slate-500 mb-1">Prix Maximum (€)</label>
+            <label htmlFor="prix_max" className="block text-xs font-semibold text-slate-500 mb-1">Prix Maximum (FCFA)</label>
             <input
               type="number"
               id="prix_max"
